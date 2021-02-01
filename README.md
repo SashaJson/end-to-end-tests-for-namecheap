@@ -19,3 +19,8 @@ After that npm install such dependency as:
 `jest, puppeteer, jest-puppeteer, babel-jest, @babel/core, @babel/preset-env`
 
 # Perform tests
+
+To perform test 'authorization-page-not-registered-user' you need start npm script
+```
+npm run test:authorization-page-not-registered-user.test
+```
