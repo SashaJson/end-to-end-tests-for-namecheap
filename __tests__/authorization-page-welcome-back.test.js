@@ -1,6 +1,6 @@
 import HomePage from '../pages/homePage';
 import AuthorizationPage from '../pages/authorizationPage';
-import UserPage from '../pages/userPage';
+import UserForm from '../pages/components/userForm';
 
 import {
     EMAIL,
@@ -10,18 +10,18 @@ import {
     AUTHORIZATION_PAGE_URL
 } from '../config';
 
-describe('Testing Authorization page. Not registered user', () => {
+describe('Authorization page (Welcome back!)', () => {
 
     let homepage;
     let authorizationpage;
-    let userpage;
+    let userform;
 
     beforeAll(async () => {
         jest.setTimeout(JEST_TIME_OUT);
 
         homepage = new HomePage();
         authorizationpage = new AuthorizationPage();
-        userpage = new UserPage();
+        userform = new UserForm();
     });
 
     it('0. Open Home page and click on "LOG IN" text', async () => {
@@ -53,9 +53,9 @@ describe('Testing Authorization page. Not registered user', () => {
 
     it('2. "Log in" button has to be changed on "User@email" button (with dropdown menu) from the left side in the Header of the page',async () => {
 
-        await userpage.isUserFormDisplayed();
+        await userform.isUserFormDisplayed();
 
     });
 
-}); // describe (Testing Authorization page. Not registered user)
+}); // describe (Authorization page (Welcome back!))
 
