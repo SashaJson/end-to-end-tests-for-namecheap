@@ -3,7 +3,11 @@ import AuthorizationPage from '../pages/authorizationPage';
 
 import randomGenerationEmailPassword from '../helpers/randomGenrationEmailPassword';
 
-import {JEST_TIME_OUT} from '../config';
+import {
+    JEST_TIME_OUT,
+    HOME_PAGE_URL,
+    AUTHORIZATION_PAGE_URL
+} from '../config';
 
 describe('Testing Authorization page. Not registered user', () => {
 
@@ -29,7 +33,7 @@ describe('Testing Authorization page. Not registered user', () => {
         await homepage.visit();
 
         let urlHomePage = await homepage.getUrl();
-        expect(urlHomePage).toBe('https://www.sbzend.ssls.com/');
+        expect(urlHomePage).toBe(HOME_PAGE_URL);
 
         await homepage.buttonDisplayed();
         await homepage.clickLogIn();
@@ -43,7 +47,7 @@ describe('Testing Authorization page. Not registered user', () => {
         await authorizationpage.isLoginFormDisplayed();
 
         let urlAuthorizationPage = await authorizationpage.getUrl();
-        expect(urlAuthorizationPage).toBe('https://www.sbzend.ssls.com/authorize');
+        expect(urlAuthorizationPage).toBe(AUTHORIZATION_PAGE_URL);
 
         await authorizationpage.login(notRegisterEmail, notExistEmail);
         await authorizationpage.displayPassword();
