@@ -10,4 +10,12 @@ Also in E2E framework can add: build for any device (model: iphone X or laptop w
 
 # Initial dependency
 
+Run following command
+
+```
+npm install
+```
+After that npm install such dependency as:
+`jest, puppeteer, jest-puppeteer, babel-jest, @babel/core, @babel/preset-env`
+
 # Perform tests
