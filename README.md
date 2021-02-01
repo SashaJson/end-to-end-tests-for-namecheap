@@ -16,11 +16,16 @@ Run following command
 npm install
 ```
 After that npm install such dependency as:
-`jest, puppeteer, jest-puppeteer, babel-jest, @babel/core, @babel/preset-env`
+`jest, puppeteer, jest-puppeteer, babel-jest, @babel/core, @babel/preset-env, randexp`
 
 # Perform tests
 
 To perform test 'authorization-page-not-registered-user' you need start npm script
 ```
 npm run test:authorization-page-not-registered-user.test
+```
+
+To perform test 'authorization-page-welcome-back' you need start npm script
+```
+npm run test:authorization-page-welcome-back
 ```
