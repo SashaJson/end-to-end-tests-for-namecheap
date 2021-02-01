@@ -4,7 +4,8 @@
   "description": "Develop framework for E2E testing",
   "main": "index.js",
   "scripts": {
-    "test:authorization-page-not-registered-user.test": "jest ./__tests__/authorization-page-not-registered-user.test.js --forceExit"
+    "test:authorization-page-not-registered-user": "jest ./__tests__/authorization-page-not-registered-user.test.js --forceExit",
+    "test:authorization-page-welcome-back": "jest ./__tests__/authorization-page-welcome-back.test.js --forceExit"
   },
   "keywords": [
     "jest",
