@@ -10,7 +10,7 @@ import {
     AUTHORIZATION_PAGE_URL
 } from '../config';
 
-describe('Authorization page (Welcome back!)', () => {
+describe('Testing Authorization page (Welcome back!)', () => {
 
     let homepage;
     let authorizationpage;
@@ -57,5 +57,5 @@ describe('Authorization page (Welcome back!)', () => {
 
     });
 
-}); // describe (Authorization page (Welcome back!))
+}); // describe (Testing Authorization page (Welcome back!))
 
