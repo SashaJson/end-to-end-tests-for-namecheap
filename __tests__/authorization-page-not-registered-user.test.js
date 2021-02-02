@@ -15,7 +15,7 @@ describe('Testing Authorization page. Not registered user', () => {
 
     let {
         email: notRegisterEmail,
-        password: notExistEmail
+        password: notExistPassword
     } = randomGenerationEmailPassword();
 
     let homepage;
@@ -49,7 +49,7 @@ describe('Testing Authorization page. Not registered user', () => {
         let urlAuthorizationPage = await authorizationpage.getUrl();
         expect(urlAuthorizationPage).toBe(AUTHORIZATION_PAGE_URL);
 
-        await authorizationpage.login(notRegisterEmail, notExistEmail);
+        await authorizationpage.login(notRegisterEmail, notExistPassword);
         await authorizationpage.displayPassword();
         await authorizationpage.submitLogin();
 
