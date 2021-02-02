@@ -6,7 +6,7 @@ E2E framework for testing. I know that you use Protractor for E2E testing, i thi
 
 Testing framework i choose Jest because it maintained by Facebook and works with projects using Babel, TypeScript, Node.js, React, Angular, Vue.js, and Svelte.
 
-Also in E2E framework can add: build for any device (model: iphone X or laptop with defined by parameters) or build framework with defined for example build on JS es2015 and etc...)
+Also in E2E framework can add: build for any device (model: iphone X or laptop with defined by parameters) or build framework with defined for example build on JS es2015 or snapshot testing and etc...)
 
 # Initial dependency
 
@@ -29,3 +29,14 @@ To perform test 'authorization-page-welcome-back' you need start npm script
 ```
 npm run test:authorization-page-welcome-back
 ```
+To perform test 'my-profile-page-client-area' you need start npm script
+```
+npm run test:my-profile-page-client-area
+```
+
+## Change configuration puppeteer 
+path to file
+``
+./jest-puppeteer.config.js
+``
+For example, insert 'true' to property 'headless' if need disable headless-mode 
