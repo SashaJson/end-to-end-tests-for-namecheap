@@ -13,12 +13,13 @@ export default class AuthorizationPage extends BasePage {
         password
     ) {
         await page.waitForSelector('input[type="email"]');
+        await page.waitForSelector('input[type="password"]');
         await page.type('input[type="email"]', email);
-        await page.type('input[type="password"]', password);
+        await page.type('input[placeholder="Enter password"]', password);
     }
 
     async submitLogin() {
-        await page.click('button[class="btn block primary"]');
+        await page.click('button[type="submit"]');
     }
 
     async displayPassword() {
@@ -29,4 +30,5 @@ export default class AuthorizationPage extends BasePage {
         await page.waitForSelector('.ssls-notification__info');
         return await page.$eval('.ssls-notification__info', element => element.innerText);
     }
+
 }
