@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:authorization-page-not-registered-user": "jest ./__tests__/authorization-page-not-registered-user.test.js --forceExit",
-    "test:authorization-page-welcome-back": "jest ./__tests__/authorization-page-welcome-back.test.js --forceExit"
+    "test:authorization-page-welcome-back": "jest ./__tests__/authorization-page-welcome-back.test.js --forceExit",
+    "test:my-profile-page-client-area": "jest ./__tests__/my-profile-page-client-area.test.js --forceExit"
   },
   "keywords": [
     "jest",
