@@ -1,9 +1,11 @@
 import BasePage from './basePage';
 
+import {HOME_PAGE_URL} from '../config';
+
 export default class HomePage extends BasePage {
 
     async visit() {
-        await page.goto('https://www.sbzend.ssls.com');
+        await page.goto(HOME_PAGE_URL);
     }
 
     async buttonDisplayed() {
