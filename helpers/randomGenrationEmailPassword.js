@@ -1,4 +1,4 @@
-const {randexp} = require('randexp');
+import { randexp } from 'randexp';
 
 module.exports = () => {
 
