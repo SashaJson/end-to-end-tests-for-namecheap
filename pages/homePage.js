@@ -1,6 +1,5 @@
+import { HOME_PAGE_URL } from '../static-data';
 import BasePage from './basePage';
-
-import {HOME_PAGE_URL} from '../config';
 
 export default class HomePage extends BasePage {
 
