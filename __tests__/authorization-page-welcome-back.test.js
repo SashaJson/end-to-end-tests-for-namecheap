@@ -1,14 +1,7 @@
-import HomePage from '../pages/homePage';
+import { JEST_TIME_OUT, HOME_PAGE_URL, AUTHORIZATION_PAGE_URL } from '../static-data';
 import AuthorizationPage from '../pages/authorizationPage';
 import UserForm from '../pages/components/userForm';
-
-import {
-    EMAIL,
-    PASSWORD,
-    JEST_TIME_OUT,
-    HOME_PAGE_URL,
-    AUTHORIZATION_PAGE_URL
-} from '../config';
+import HomePage from '../pages/homePage';
 
 describe('Testing Authorization page (Welcome back!)', () => {
 
@@ -45,7 +38,7 @@ describe('Testing Authorization page (Welcome back!)', () => {
         let urlAuthorizationPage = await authorizationpage.getUrl();
         expect(urlAuthorizationPage).toBe(AUTHORIZATION_PAGE_URL);
 
-        await authorizationpage.login(EMAIL, PASSWORD);
+        await authorizationpage.login(process.env.EMAIL, process.env.PASSWORD);
         await authorizationpage.displayPassword();
         await authorizationpage.submitLogin();
 

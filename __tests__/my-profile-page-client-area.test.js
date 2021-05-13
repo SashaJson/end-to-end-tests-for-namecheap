@@ -1,13 +1,8 @@
-import HomePage from '../pages/homePage';
 import AuthorizationPage from '../pages/authorizationPage';
 import UserForm from '../pages/components/userForm';
 import ProfilePage from '../pages/profilePage';
-
-import {
-    EMAIL,
-    PASSWORD,
-    JEST_TIME_OUT
-} from '../config';
+import { JEST_TIME_OUT } from '../static-data';
+import HomePage from '../pages/homePage';
 
 describe('Testing My profile page. Client area', () => {
 
@@ -41,7 +36,7 @@ describe('Testing My profile page. Client area', () => {
 
             await authorizationpage.defaultTimeout(10000);
             await authorizationpage.isLoginFormDisplayed();
-            await authorizationpage.login(EMAIL, PASSWORD);
+            await authorizationpage.login(process.env.EMAIL, process.env.PASSWORD);
             await authorizationpage.submitLogin();
             await authorizationpage.wait(5000);
 
@@ -93,7 +88,7 @@ describe('Testing My profile page. Client area', () => {
 
             await authorizationpage.defaultTimeout(10000);
             await authorizationpage.isLoginFormDisplayed();
-            await authorizationpage.login(EMAIL, PASSWORD);
+            await authorizationpage.login(process.env.EMAIL, process.env.PASSWORD);
             await authorizationpage.submitLogin();
             await authorizationpage.wait(5000);
 

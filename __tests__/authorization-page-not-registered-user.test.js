@@ -1,13 +1,7 @@
-import HomePage from '../pages/homePage';
-import AuthorizationPage from '../pages/authorizationPage';
-
+import { JEST_TIME_OUT, HOME_PAGE_URL, AUTHORIZATION_PAGE_URL } from '../static-data';
 import randomGenerationEmailPassword from '../helpers/randomGenrationEmailPassword';
-
-import {
-    JEST_TIME_OUT,
-    HOME_PAGE_URL,
-    AUTHORIZATION_PAGE_URL
-} from '../config';
+import AuthorizationPage from '../pages/authorizationPage';
+import HomePage from '../pages/homePage';
 
 describe('Testing Authorization page. Not registered user', () => {
 
