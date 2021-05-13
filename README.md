@@ -39,4 +39,4 @@ path to file
 ``
 ./jest-puppeteer.config.js
 ``
-For example, insert 'true' to property 'headless' if need disable headless-mode 
+For example, insert 'true' to property 'headless' if need disable headless-mode
